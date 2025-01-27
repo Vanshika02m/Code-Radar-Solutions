@@ -1,4 +1,4 @@
 #include <stdio.h>
-float number;
-scanf("%f",&number);
-printf("You entered:%f",number);
+float n;
+scanf("%f",&n);
+printf("You entered:%f",n);
