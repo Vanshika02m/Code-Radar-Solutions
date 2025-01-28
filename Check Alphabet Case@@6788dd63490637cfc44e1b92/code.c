@@ -5,6 +5,10 @@ int main(){
     if(ch=='A'){
         printf("Uppercase");
     }
-    else{
+    else if(ch=='z',ch=='a'){
         printf("Lowercase");
     }
+    else{
+        printf("Not an aplhabet");
+    }
+}
