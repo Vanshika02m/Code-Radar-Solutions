@@ -5,7 +5,7 @@ int main(){
     if(ch=='A'){
         printf("Uppercase");
     }
-    else if(ch=='z',ch=='a'){
+    else if(ch=='z'){
         printf("Lowercase");
     }
     else{
