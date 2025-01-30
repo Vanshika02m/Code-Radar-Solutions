@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main(){
+    int n;
+    scanf("%d",&n);
     if(n==1){
         printf("*\n");
     }
@@ -12,5 +14,26 @@ int main(){
         printf("* * *\n");
         printf("* *\n");
         printf("*");
+    }
+    if(n==4){
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==5){
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==6){
+        printf("* * * * * *\n");
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
     }
 }
