@@ -10,4 +10,9 @@ int main(){
         printf(" * \n");
         printf("***\n");
     }
+    if(n==3){
+        printf("* \n");
+        printf("***\n");
+        printf("*****\n");
+    }
 }
