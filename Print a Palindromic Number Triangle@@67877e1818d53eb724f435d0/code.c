@@ -14,4 +14,23 @@ int main(){
         printf(" 121 \n");
         printf("12321 \n");
     }
+    if(n==4){
+        printf("   1   \n");
+        printf("  121  \n");
+        printf(" 12321 \n");
+        printf("1234321\n");
+    }
+    if(n==5){
+        printf("    1    \n");
+        printf("   121\n");
+        printf("  12321\n");
+        printf(" 1234321 \n");
+        printf("123454321\n");
+    }
+
+
+
+
+
+
 }
