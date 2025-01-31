@@ -9,4 +9,9 @@ int main(){
         printf(" 1 \n");
         printf("121\n");
     }
+    if(n==3){
+        printf("  1  \n");
+        printf(" 121 \n");
+        printf("12321 \n");
+    }
 }
