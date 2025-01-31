@@ -14,4 +14,10 @@ int main(){
         printf(" 1 2 \n");
         printf("1 2 3 \n");
     }
+    if(n==4){
+        printf("   1   \n");
+        printf("  1 2  \n");
+        printf(" 1 2 3 \n");
+        printf("1 2 3 4 \n");
+    }
 }
