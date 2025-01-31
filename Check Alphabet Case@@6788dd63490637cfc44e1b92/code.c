@@ -8,7 +8,7 @@ int main(){
     else if(ch>='a'&& ch<='z'){
         printf("Lowercase");
     }
-    else{
+    else
         printf("Not an aplhabet");
-    }
+    
 }
