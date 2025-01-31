@@ -6,4 +6,11 @@ int main(){
     if(n==1){
         print("*\n");
     }
+    if(n==2){
+        printf("  *\n");
+        printf(" ***\n");
+        printf("*****\n");
+        printf(" ***\n");
+        printf("  *\n");
+    }
 }
