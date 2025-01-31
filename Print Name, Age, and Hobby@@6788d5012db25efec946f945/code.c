@@ -2,7 +2,7 @@
 int main(){
     char str1[20];
     int age;
-    str2[20];
+    char str2[20];
     scanf("%s",&str1);
     scanf("%d",&age);
     scanf("%s",&str2);
