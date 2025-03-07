@@ -1,14 +1,14 @@
 // Your code here...
-int fib(int n){
+int fibonacciSeries(int n){
     if(n==0){
         return n;
     }
     else{
-        return fib(n-1)+fib(n-2);
+        return fibonacciSeries(n-1)+fibonacciSeries(n-2);
     }
 }
 int main(){
     int n;
     scanf("%d",&n);
-    printf("%d ",fib(n));
+    printf("%d ",fibonacciSeries(n));
 }
