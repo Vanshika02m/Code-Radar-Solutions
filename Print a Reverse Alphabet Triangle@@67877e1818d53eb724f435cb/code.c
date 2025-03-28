@@ -1,31 +1,11 @@
 #include<stdio.h>
 int main(){
-    int N;
-    scanf("%d",&N);
-    if(N==1){
-        printf("A");
-    }
-    if(N==2){
-        printf("A B\n");
-        printf("A\n");
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=n;j>=1;j--){
+            printf("%c ",j);
 
-    }
-    if(N==3){
-        print("A B C \n");
-        printf("A B\n");
-    }
-    if(N==4){
-        printf("A B C D\n");
-        printf("A B C\n");
-        printf("A B\n");
-        printf("A\n");
-    }
-    if(N==5){
-        printf("A B C D E\n");
-        printf("A B C D\n");
-        printf("A B C\n");
-        printf("A B \n");
-        printf("A\n");
-
+        }
     }
 }
