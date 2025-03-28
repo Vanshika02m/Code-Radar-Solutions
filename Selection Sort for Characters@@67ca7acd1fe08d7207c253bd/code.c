@@ -9,7 +9,7 @@ void selectionSort(char arr[],int n){
             }
             
         }
-        int temp=arr[minIndex];
+        char temp=arr[minIndex];
         arr[minIndex]=arr[i];
         arr[i]=temp;
     }
