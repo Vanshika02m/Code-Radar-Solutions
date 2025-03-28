@@ -23,6 +23,35 @@ int main(){
         printf("*   *\n");
         printf("*   *\n");
         printf("*****\n");
-
+    }
+    if(n==6){
+        printf("******\n");
+        printf("*    *\n");
+        printf("*    *\n");
+        printf("*    *\n");
+        printf("*    *\n");
+        printf("*    *\n");
+        printf("******\n");
+    }
+    if(n==7){
+        printf("*******\n");
+        printf("*     *\n");
+        printf("*     *\n");
+        printf("*     *\n");
+        printf("*     *\n");
+        printf("*     *\n");
+        printf("*     *\n");
+        printf("*******\n");
+    }
+    if(n==8){
+        printf("********\n");
+        printf("*      *\n");
+        printf("*      *\n");
+        printf("*      *\n");
+        printf("*      *\n");
+        printf("*      *\n");
+        printf("*      *\n");
+        printf("*      *\n");
+        printf("********\n");
     }
 }
