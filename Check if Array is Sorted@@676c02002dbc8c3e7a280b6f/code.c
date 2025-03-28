@@ -13,7 +13,7 @@ bool isSorted(int arr[], int n) {
 int main() {
     int n;
     scanf("%d",&n);
-    int arr[n]
+    int arr[n];
     if (isSorted(arr, n)) {
         printf("Sorted.\n");
     } else {
