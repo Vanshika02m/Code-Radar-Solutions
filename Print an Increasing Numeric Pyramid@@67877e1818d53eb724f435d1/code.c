@@ -1,57 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
     int n;
+    int nst=1;
     scanf("%d",&n);
-    if(n==1){
-        printf("1\n");
+    for(int i=1;i<n;i++){
+        for(int k=1;k<n-i-1;k++){
+            printf(" ");
+        }
+        for(int j=1;j<=nst;j++){
+            printf("%d ",j);
+        }
     }
-    if(n==2){
-        printf(" 1 \n");
-        printf("1 2 \n");
-    }
-    if(n==3){
-        printf("  1  \n");
-        printf(" 1 2 \n");
-        printf("1 2 3 \n");
-    }
-    if(n==4){
-        printf("   1   \n");
-        printf("  1 2  \n");
-        printf(" 1 2 3 \n");
-        printf("1 2 3 4 \n");
-    }
-    if(n==5){
-        printf("    1    \n");
-        printf("   1 2   \n");
-        printf("  1 2 3  \n");
-        printf(" 1 2 3 4 \n");
-        printf("1 2 3 4 5 \n");
-    }
-    if(n==6){
-        printf("     1     \n");
-        printf("    1 2    \n");
-        printf("   1 2 3   \n");
-        printf("  1 2 3 4  \n");
-        printf(" 1 2 3 4 5  \n");
-        printf("1 2 3 4 5 6 \n");
-    }
-    if(n==7){
-        printf("      1      \n");
-        printf("     1 2     \n");
-        printf("    1 2 3    \n");
-        printf("   1 2 3 4   \n");
-        printf("  1 2 3 4 5  \n");
-        printf(" 1 2 3 4 5 6 \n");
-        printf("1 2 3 4 5 6 7 \n");
-    }
-
-
-
-
-
-
-
-
-
-
 }
