@@ -1,49 +1,12 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main(){
     int n;
     scanf("%d",&n);
-    if(n==1){
-        printf("*\n");
+    for(int i=n;i>=1;i--){
+        for(int j=i;j>=1;j--){
+            printf("*");
+        }
+        printf("\n");
     }
-    if(n==2){
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==3){
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*");
-    }
-    if(n==4){
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==5){
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==6){
-        printf("* * * * * *\n");
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==7){
-        printf("* * * * * * *\n");
-        printf("* * * * * *\n");
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*");
-
-    }
+    
 }
