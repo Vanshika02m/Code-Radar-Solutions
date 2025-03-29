@@ -1,53 +1,12 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main(){
     int n;
-    scanf("%d",&n);
-    if(n==1){
-        printf("A");
+    scan("%d",&n);
+    for(int i=1;i<=n;i++){
+        char ch='A'+i-1;
+        for(int j='A'j<=ch;j++){
+            printf("%c ",j);
+        }
+        printf("\n");
     }
-    if(n==2){
-        printf("A\n");
-        printf("A B\n");
-    }
-    if(n==3){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-    }
-    if(n==4){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-
-    }
-    if(n==5){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-        printf("A B C D E\n");
-
-    }
-    if(n==6){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-        printf("A B C D E\n");
-        printf("A B C D E F\n");
-        
-    }
-    if(n==7){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-        printf("A B C D E\n");
-        printf("A B C D E F\n");
-        printf("A B C D E F G\n");
-    }
-    
-
 }
