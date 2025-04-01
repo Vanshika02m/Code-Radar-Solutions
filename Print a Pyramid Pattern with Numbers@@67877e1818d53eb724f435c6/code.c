@@ -6,12 +6,10 @@ int main(){
         for(int k=1;k<=n-i;k++){
             printf(" ");
         }
-        for(int j=1;j<=nst;j++){                   //11
+        for(int j=1;j<=nst;j++){
             printf("%d ",j);
         }
+        nst+=2;
         printf("\n");
-        nst+=1;
-        
     }
-    
 }
