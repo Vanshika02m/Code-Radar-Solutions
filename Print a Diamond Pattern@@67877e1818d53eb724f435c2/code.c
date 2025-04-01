@@ -1,36 +1,26 @@
-#include <stdio.h>
-
-int main() {
-    int n;
-    
-    printf("Enter the number of rows for half diamond: ");
-    scanf("%d", &n);
-
-    // Upper half of the diamond
-    for (int i = 1; i <= n; i++) {
-        // Print spaces
-        for (int j = 1; j <= n - i; j++) {
+#include<stdio.h>
+int main(){
+    int n,nst=1;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int k=1;k<=n-i;k++){
             printf(" ");
         }
-        // Print stars
-        for (int j = 1; j <= 2 * i - 1; j++) {
+        for(int j=1;j<=nst;j++){
             printf("*");
         }
+        nst+=2;
         printf("\n");
     }
-
-    // Lower half of the diamond
-    for (int i = n - 1; i >= 1; i--) {
-        // Print spaces
-        for (int j = 1; j <= n - i; j++) {
+    nst-=4;
+    for(int i=n;i>=1;i--){
+        for(int k=1;k<=n-i;k++){
             printf(" ");
         }
-        // Print stars
-        for (int j = 1; j <= 2 * i - 1; j++) {
+        for(int j=i-1;j<=nst;j++){
             printf("*");
         }
+        nst-=2;
         printf("\n");
     }
-
-    return 0;
 }
