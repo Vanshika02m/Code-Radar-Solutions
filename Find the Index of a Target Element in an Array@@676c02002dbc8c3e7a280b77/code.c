@@ -1,22 +1,28 @@
-// Your code here...
 #include<stdio.h>
 int main(){
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
+
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    for(int i = 0; i < n; i++){
+        scanf("%d", &arr[i]);
     }
+
     int target;
-    scanf("%d",&target);
-    for(int i=0;i<n;i++){
-        if(arr[i]!=target){
-            printf("-1");
-        }
-        else{
-             printf("%d",i);
-       
+    scanf("%d", &target);
+
+    int found = 0;
+    for(int i = 0; i < n; i++){
+        if(arr[i] == target){
+            printf("%d\n", i); 
+            found = 1;
+            break;
         }
     }
-    i
+
+    if(!found){
+        printf("-1\n");  
+    }
+
+    return 0;
 }
