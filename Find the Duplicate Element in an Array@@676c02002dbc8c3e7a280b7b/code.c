@@ -1,16 +1,30 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
+
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    int visited[n];
+
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        visited[i] = 0; 
     }
-    int duplicate=0;
-    for(int i=0;i<n;i++){
-        if(arr[i]=duplicate){
-            duplicate++;
+
+    int duplicate = 0;
+
+    for(int i = 0; i < n; i++) {
+        if(visited[i] == 1)
+            continue;
+        for(int j = i + 1; j < n; j++) {
+            if(arr[i] == arr[j]) {
+                duplicate++;
+                visited[j] = 1;
+            }
         }
     }
-    printf("%d",duplicate);
+
+    printf("%d\n", duplicate);
+    return 0;
 }
