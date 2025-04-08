@@ -9,13 +9,16 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    int max=0;
     int max=arr[0];
     for(int i=0;i<n;i++){
         if(arr[i]%2==0){
             if(max<arr[i]){
                 max=arr[i];
+                max++;
             }
         }
+         printf("%d",max);
     }
-    printf("%d",max);
+   
 }
