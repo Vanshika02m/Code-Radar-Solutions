@@ -20,5 +20,10 @@ int main(){
             smax=arr[i];
         }
     }
-    printf("%d",smax);
+    if (smax == INT_MIN) {
+        printf("-1");
+    } else {
+        printf("Second largest element is: %d\n", smax);
+    }
+
 }
