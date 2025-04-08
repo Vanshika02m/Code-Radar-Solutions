@@ -1,28 +1,26 @@
 #include<stdio.h>
-int main(){
-    int n;
-    scanf("%d", &n);
-
-    int arr[n];
-    for(int i = 0; i < n; i++){
-        scanf("%d", &arr[i]);
-    }
-
-    int target;
-    scanf("%d", &target);
-
-    int found = 0;
-    for(int i = 0; i < n; i++){
-        if(arr[i] == target){
-            printf("%d\n", i); 
-            found = 1;
-            break;
+int linearSearch(int arr[],int n,int key){
+    for(int i=0;i<n;i++){
+        if(arr[i]==key){
+            return i;
         }
     }
-
-    if(!found){
-        printf("-1\n");  
+    return -1;
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
     }
-
-    return 0;
+    int key;
+    scanf("%d",&key);
+    int result=linearSearch(arr,n,key);
+    if(result!=-1){
+        printf("%d",result);
+    }
+    else{
+        printf("-1");
+    }
 }
