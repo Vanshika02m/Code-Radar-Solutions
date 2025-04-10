@@ -9,7 +9,7 @@ int main(){
     int element;
     for(int i=0;i<n;i++){
         if(arr[i]>element/2){
-            printf("element");
+            printf("%d",element);
         }
         else{
             printf("-1");
